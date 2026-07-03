@@ -7,8 +7,12 @@ namespace DogsAtTheRaces
         public string Name;
         public Bet MyBet;
         public int Cash;
-
         public RadioButton MyRadioButton;
         public Label MyLabel;
-    }
-}
+    
+    public void UpdateLabels()
+        {
+            MyLabel.Text = MyBet.GetDescription();
+            MyRadioButton.Text = Name+"has"+Cash+"bucks";
+        }
+    } }
