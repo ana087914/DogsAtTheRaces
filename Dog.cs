@@ -16,5 +16,12 @@ namespace DogsAtTheRaces
             Location = 0;
             MyPictureBox.Left = StartingPosition;
         }
+        public bool Run()
+        {
+            Location = Location + Randomizer.Next(1, 5);
+            MyPictureBox.Left = StartingPosition + Location;
+
+            return false;
+        }
     }
     }
