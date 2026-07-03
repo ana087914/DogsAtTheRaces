@@ -2,6 +2,10 @@ namespace DogsAtTheRaces;
 
 public partial class BettingParlor : Form
 {
+    Random randomizer = new Random();
+
+Dog[] dogs = new Dog[4];
+Guy[] guys = new Guy[3];
     public BettingParlor()
     {
         InitializeComponent();
