@@ -38,4 +38,10 @@ namespace DogsAtTheRaces
 
             return true;
         }
+        public void Collect(int winner)
+        {
+            Cash=Cash+MyBet.PayOut(winner);
+
+            ClearBet();
+        }
     } }
