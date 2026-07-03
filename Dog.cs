@@ -1,12 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DogsAtTheRaces
 {
-    internal class Dog
+    public class Dog
     {
+        public int StartingPosition;
+        public int RacetrackLength;
+        public PictureBox MyPictureBox;
+        public int Location;
+        public Random Randomizer;
+
+        public void TakeStartingPosition()
+        {
+            Location = 0;
+            MyPictureBox.Left = StartingPosition;
+        }
+        public bool Run()
+        {
+            Location = Location + Randomizer.Next(1, 5);
+            MyPictureBox.Left = StartingPosition + Location;
+
+            if (Location >= RacetrackLength)
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
-}
+    }
