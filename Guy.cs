@@ -29,6 +29,13 @@ namespace DogsAtTheRaces
                 return false;
             }
 
+            MyBet = new Bet();
+            MyBet.Amount = betAmount;
+            MyBet.Dog = dogToWin;
+            MyBet.Bettor = this;
+
+            UpdateLabels();
+
             return true;
         }
     } }
