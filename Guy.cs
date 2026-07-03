@@ -22,4 +22,13 @@ namespace DogsAtTheRaces
 
             UpdateLabels();
         }
+        public bool PlaceBet(int betAmount, int dogToWin)
+        {
+            if (betAmount>Cash)
+            {
+                return false;
+            }
+
+            return true;
+        }
     } }
