@@ -15,4 +15,11 @@ namespace DogsAtTheRaces
             MyLabel.Text = MyBet.GetDescription();
             MyRadioButton.Text = Name+"has"+Cash+"bucks";
         }
+        public void ClearBet()
+        {
+            MyBet = new Bet();
+            MyBet.Bettor = this;
+
+            UpdateLabels();
+        }
     } }
