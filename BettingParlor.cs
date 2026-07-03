@@ -15,6 +15,20 @@ Guy[] guys = new Guy[3];
         guys[0].MyRadioButton = rb_Guy1;
         guys[0].MyLabel = lb_guy1BetLabel;
         guys[0].ClearBet();
+
+        guys[1] = new Guy();
+        guys[1].Name = "Bob";
+        guys[1].Cash = 75;
+        guys[1].MyRadioButton = rb_Guy2;
+        guys[1].MyLabel = lb_guy2BetLabel;
+        guys[1].ClearBet();
+
+        guys[2] = new Guy();
+        guys[2].Name = "Al";
+        guys[2].Cash = 100;
+        guys[2].MyRadioButton = rb_Guy3;
+        guys[2].MyLabel = lb_guy3BetLabel;
+        guys[2].ClearBet();
     }
 
 
