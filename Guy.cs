@@ -9,8 +9,34 @@ namespace DogsAtTheRaces
         public int Cash;
         public RadioButton MyRadioButton;
         public Label MyLabel;
-    
-    public void UpdateLabels()
+    public string name
+        {
+            get{ return Name;}
+            set {Name = value;}
+        }
+        public Bet myBet
+        {
+            get {return MyBet;}
+            set {MyBet = value; }
+        }
+        public int cash
+        {
+            get {return Cash;}
+            set {Cash = value;}
+        }
+        public RadioButton myRadioButton
+        {
+            get {return MyRadioButton;}
+            set {MyRadioButton = value;}
+        }
+        public Label myLabel
+        {
+            get {return MyLabel;}
+            set {MyLabel = value;}
+        }
+
+
+        public void UpdateLabels()
         {
             MyLabel.Text = MyBet.GetDescription();
             MyRadioButton.Text = Name+"has"+Cash+"bucks";
