@@ -39,6 +39,14 @@ namespace DogsAtTheRaces
             get {return randomizer;}
             set {randomizer=value;}
         }
+        public Dog(PictureBox pictureBox, int startingPosition, int racetrackLength, Random randomizer)
+        {
+            MyPictureBox=pictureBox;
+            StartingPosition=startingPosition;
+            RacetrackLength=racetrackLength;
+            Randomizer=randomizer;
+            Location =0;
+        }
         public void TakeStartingPosition()
         {
             Location= 0;
