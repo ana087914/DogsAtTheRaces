@@ -43,10 +43,7 @@ namespace DogsAtTheRaces
         }
         public void ClearBet()
         {
-            MyBet = new Bet();
-            MyBet.Bettor = this;
-
-            UpdateLabels();
+            MyBet=null;
         }
         public bool PlaceBet(int betAmount, int dogToWin)
         {
