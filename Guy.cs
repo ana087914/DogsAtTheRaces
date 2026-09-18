@@ -35,7 +35,14 @@ namespace DogsAtTheRaces
             set {MyLabel = value;}
         }
 
-
+        public Guy(string name, int cash, RadioButton radioButton, Label label)
+        {
+            Name=name;
+            Cash=cash;
+            MyRadioButton=radioButton;
+            MyLabel=label;
+            MyBet=null;
+        }
         public void UpdateLabels()
         {
        if (MyBet== null)
