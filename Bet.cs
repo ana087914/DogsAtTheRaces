@@ -1,4 +1,6 @@
-﻿namespace DogsAtTheRaces
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace DogsAtTheRaces
 {
     public class Bet
     {
@@ -6,6 +8,20 @@
         public int Dog;
         public Guy Bettor;
 
+        public int Amount {
+            get {return Amount;}
+            set {Amount = value;}
+        }
+        public int Dog
+        {
+            get {return Dog;}
+            set {Dog = value;}
+        }
+        public Guy Bettor
+        {
+            get {return Bettor;}
+            set {Bettor = value;}
+        }
         public string GetDescription()
         {
             if (Amount==0)
