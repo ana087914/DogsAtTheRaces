@@ -20,19 +20,11 @@ public partial class BettingParlor : Form
         guys[0] = new Guy("Joe", 50, rb_Guy1, lb_guy1BetLabel);
         guys[0].UpdateLabels();
 
-        guys[1] = new Guy();
-        guys[1].Name = "Bob";
-        guys[1].Cash = 75;
-        guys[1].MyRadioButton = rb_Guy2;
-        guys[1].MyLabel = lb_guy2BetLabel;
-        guys[1].ClearBet();
+        guys[1] = new Guy("Bob", 75, rb_Guy2, lb_guy2BetLabel);
+        guys[1].UpdateLabels();
 
-        guys[2] = new Guy();
-        guys[2].Name = "Al";
-        guys[2].Cash = 45;
-        guys[2].MyRadioButton = rb_Guy3;
-        guys[2].MyLabel = lb_guy3BetLabel;
-        guys[2].ClearBet();
+        guys[2] = new Guy("Al", 45, rb_Guy3, lb_guy3BetLabel);
+        guys[2].UpdateLabels();
 
         dogs[0] = new Dog();
         dogs[0].MyPictureBox = pb_dog1;
