@@ -17,12 +17,8 @@ public partial class BettingParlor : Form
         num_dogNumber.Minimum = 1;
         num_dogNumber.Maximum = 4;
 
-        guys[0] = new Guy();
-        guys[0].Name = "Joe";
-        guys[0].Cash = 50;
-        guys[0].MyRadioButton = rb_Guy1;
-        guys[0].MyLabel = lb_guy1BetLabel;
-        guys[0].ClearBet();
+        guys[0] = new Guy("Joe", 50, rb_Guy1, lb_guy1BetLabel);
+        guys[0].UpdateLabels();
 
         guys[1] = new Guy();
         guys[1].Name = "Bob";
