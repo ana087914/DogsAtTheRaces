@@ -22,6 +22,17 @@ namespace DogsAtTheRaces
             get {return Bettor;}
             set {Bettor = value;}
         }
+        public Bet(int amount, int dog, Guy bettor)
+        {
+            Amount = amount;
+            Dog = dog;
+            Bettor = bettor;
+        }
+        {
+            Amount = amount;
+            Dog = dog;
+            Bettor = bettor;
+        })
         public string GetDescription()
         {
             if (Amount==0)
