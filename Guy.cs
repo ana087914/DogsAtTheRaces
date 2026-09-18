@@ -5,36 +5,41 @@ namespace DogsAtTheRaces
     public class Guy
     {
         public string Name;
-        public Bet MyBet;
-        public int Cash;
-        public RadioButton MyRadioButton;
-        public Label MyLabel;
-    public string name
+        private string name;
+        private Bet myBet;
+        private int cash;
+        private RadioButton myRadioButton;
+        private Label myLabel;
+
+        public string Name
         {
-            get{ return Name;}
-            set {Name = value;}
-        }
-        public Bet myBet
-        {
-            get {return MyBet;}
-            set {MyBet = value; }
-        }
-        public int cash
-        {
-            get {return Cash;}
-            set {Cash = value;}
-        }
-        public RadioButton myRadioButton
-        {
-            get {return MyRadioButton;}
-            set {MyRadioButton = value;}
-        }
-        public Label myLabel
-        {
-            get {return MyLabel;}
-            set {MyLabel = value;}
+            get { return name; }
+            set { name = value; }
         }
 
+        public Bet MyBet
+        {
+            get { return myBet; }
+            set { myBet = value; }
+        }
+
+        public int Cash
+        {
+            get { return cash; }
+            set { cash = value; }
+        }
+
+        public RadioButton MyRadioButton
+        {
+            get { return myRadioButton; }
+            set { myRadioButton = value; }
+        }
+
+        public Label MyLabel
+        {
+            get { return myLabel; }
+            set { myLabel = value; }
+        }
         public Guy(string name, int cash, RadioButton radioButton, Label label)
         {
             Name=name;
