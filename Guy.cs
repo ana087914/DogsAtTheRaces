@@ -38,8 +38,16 @@ namespace DogsAtTheRaces
 
         public void UpdateLabels()
         {
-            MyLabel.Text = MyBet.GetDescription();
-            MyRadioButton.Text = Name+"has"+Cash+"bucks";
+       if (MyBet== null)
+       {
+          MyLabel.Text=Name + "Hasn't placed a bet";
+            }
+            else
+            {
+          MyLabel.Text =MyBet.GetDescription();
+            }
+
+            MyRadioButton.Text =Name+"has"+ Cash +"bucks";
         }
         public void ClearBet()
         {
