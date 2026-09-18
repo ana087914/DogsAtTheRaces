@@ -4,7 +4,7 @@ namespace DogsAtTheRaces
 {
     public class Guy
     {
-        public string Name;
+        
         private string name;
         private Bet myBet;
         private int cash;
@@ -80,8 +80,12 @@ namespace DogsAtTheRaces
         }
         public void Collect(int winner)
         {
-            Cash=Cash+MyBet.PayOut(winner);
+            if (MyBet !=null)
+            {
+                Cash =Cash +MyBet.PayOut(winner);
+            }
 
             ClearBet();
+            UpdateLabels();
         }
     } }
