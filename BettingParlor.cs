@@ -26,29 +26,33 @@ public partial class BettingParlor : Form
         guys[2] = new Guy("Al", 45, rb_Guy3, lb_guy3BetLabel);
         guys[2].UpdateLabels();
 
-        dogs[0] = new Dog();
-        dogs[0].MyPictureBox = pb_dog1;
-        dogs[0].StartingPosition = pb_dog1.Left;
-        dogs[0].RacetrackLength = pb_raceTrack.Width - pb_dog1.Width;
-        dogs[0].Randomizer = randomizer;
+        dogs[0] =new Dog(
+     pb_dog1,
+     pb_dog1.Left,
+     pb_raceTrack.Width - pb_dog1.Width,
+     randomizer
+ );
 
-        dogs[1] = new Dog();
-        dogs[1].MyPictureBox = pb_dog2;
-        dogs[1].StartingPosition = pb_dog2.Left;
-        dogs[1].RacetrackLength = pb_raceTrack.Width - pb_dog2.Width;
-        dogs[1].Randomizer = randomizer;
+        dogs[1] =new Dog(
+            pb_dog2,
+            pb_dog2.Left,
+            pb_raceTrack.Width - pb_dog2.Width,
+            randomizer
+        );
 
-        dogs[2] = new Dog();
-        dogs[2].MyPictureBox = pb_dog3;
-        dogs[2].StartingPosition = pb_dog3.Left;
-        dogs[2].RacetrackLength = pb_raceTrack.Width - pb_dog3.Width;
-        dogs[2].Randomizer = randomizer;
+        dogs[2] = new Dog(
+            pb_dog3,
+            pb_dog3.Left,
+            pb_raceTrack.Width - pb_dog3.Width,
+            randomizer
+        );
 
-        dogs[3] = new Dog();
-        dogs[3].MyPictureBox = pb_dog4;
-        dogs[3].StartingPosition = pb_dog4.Left;
-        dogs[3].RacetrackLength = pb_raceTrack.Width - pb_dog4.Width;
-        dogs[3].Randomizer = randomizer;
+        dogs[3]= new Dog(
+            pb_dog4,
+            pb_dog4.Left,
+            pb_raceTrack.Width - pb_dog4.Width,
+            randomizer
+        );
 
         rb_Guy1.Checked = true;
         lb_name.Text = guys[0].Name;
